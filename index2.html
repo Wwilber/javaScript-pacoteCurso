@@ -1,0 +1,72 @@
+<script>
+    // variáveis e tipos de dados;
+    // declaração da variável:
+        var name
+    
+    // assignment or atribuição de valores:
+        name = 'mike' 
+    
+    // que tipo de dado foi colocado na variável:
+        console.log(name); 
+        console.log(typeof name); 
+
+    let age, isHuman; 
+    age = 18;
+    isHuman = true;
+        console.log(name, age, isHuman);
+        console.log('o ' + name + ' tem ' + age + ' anos e é humano:' + isHuman);
+
+        console.log(` o ${name} tem ${age} anos `);
+
+        const person = {
+        name: 'John',
+        age: 30,
+        weight: 88.6,
+        isAdmin: true
+    }
+    console.log(person);
+    console.log(`${person.name} tem ${person.age} anos`);
+
+    const animals = [
+        'Lion',
+        'Monkey',
+        'Cat'
+    ];
+    // para ver todo o array:
+    console.log(animals);
+
+    // para ver um elemento por posição no array:
+    console.log(animals[1]);
+
+    // para ver a quantidade de elementos de uma tipo de array:
+    console.log(animals.length);
+
+    // array com objeto: na posição 2:
+    const animales = [
+        'Lion',
+        'Monkey',
+        {                   // criando um objeto dentro do array.
+            name1: 'dog',
+            age1: 3
+        },
+        'cat'
+    ];
+    console.log(animales[2]);
+
+
+    let word = "Programar é muito bacana";
+    // Transforma minúscula em maiúscula:
+    console.log(word.toUpperCase());
+
+    // transforma maiúscula em minúscula:
+    console.log(word.toLowerCase());
+
+    let phrase = "Com estudo você conquista tudo que deseja!";
+    let myArray = phrase.split(" ");
+    console.log(myArray);
+    
+    let phrase2 = "Com estudo você conquista tudo que deseja!";
+    let myArray2 = phrase2.split("o");
+    console.log(myArray2);
+
+</script>

@@ -1,0 +1,374 @@
+<!--
+    VSCODE:
+Instala a extensão html preview – para visualizar o HTML em tempo real.
+Ctrl + s = salva 
+Ctrl + Shift + P = tela de comandos.
+
+TAGS:
+Para escrever um título usa a TAG h1:
+ABERTURA DA TAG:
+<h1> 
+FECHAMENTO DA TAG:
+</h1>
+INICIAR PARÁGRAFO:
+<P>
+FECHAMENTO DE PARÁGRAFO:
+</P>
+DAR ÊNFASE A PALAVRAE FRASES E ETC:
+ITÁLICO: início: <em> xxxxxxx fim: </em>
+NEGRITO: início: <strong>  xxxxxxxx  fim: </strong> ou início: <b> xxxxxx fim: </b>
+ALT + Z: quebra do texto.
+
+LINK:
+<a href=”https: // google.com”> Saiba Mais</a>
+-->
+
+<!--
+    PRÁTICAS:
+    Escreva 2 parágrafos, dando ênfase e importância para algumas palavras,
+    e adicione um link de saiba mais.
+
+    - use a tag em para ênfase
+    - use a tag strong para importância
+    - o link pode levar para o google.
+-->
+<p>
+    Lorem <em>ipsum dolor</em> sit, <strong>amet</strong>  consectetur adipisicing elit. Veritatis facere obcaecati esse? Architecto veritatis repellendus soluta odio sapiente quo voluptatibus atque eos aspernatur at. Odio tempora harum quasi quo veniam!
+</p>
+
+<p>
+    Lorem <em>ipsum dolor sit, amet consectetur</em> adipisicing elit. Magni voluptates dolorum, accusantium sint reiciendis officiis ipsam quod tempora maxime optio consectetur labore cumque tenetur facere adipisci corporis similique culpa inventore!
+</p>
+<a href="https://google.com">Saiba Mais</a>
+
+<!--
+    CONTEÚDO DO TEXTO E CARACTERES RESERVADOS:
+    QUEBRAR LINHAS:
+    <br>
+    xxxxx
+    <br>
+    ESPAÇOS(CARACTER ESPECIAL):
+    &nbsp; = espaços.
+
+    CARACTER(RESERVADO):
+    "" = &quot;  
+    < = &lt;
+    > = &gt; 
+    & = &amp;
+    '' = &apos;
+
+    ----------------------------------------------
+    ANATOMIA DE UM DOCUMENTO HTML:
+
+    <!DOCTYPE html> = SERVE PARA INDICAR PARA ALGUNS NAVEGADORES QUE ESTAMOS UTILIZANDO html5
+    <html> ELEMENTO RAIZ(PAI)
+        <read> (filho)
+            <meta charset="utf-8" = utiliza a maior parte de caractere possível
+            <title> xxxxxxx </title>  = título da aba do site
+        </read>
+        USUÁRIO VER NA TELA:
+        <body> (filho)
+            <p>
+            SSSSSSSSSSSSSSSSSSSSSSS
+            DDDDDDDDDDDDDDDDDDDDD
+            SSSSSSSSSSSSSSSSSSSSSSS
+            </p>    
+        </body>
+    </html>
+
+    COLOCA ! emmet: preenche todo o básico do html:
+
+
+-->
+
+<!-- SERVE PARA INDICAR PARA ALGUNS NAVEGADORES QUE ESTAMOS UTILIZANDO html5 -->
+<!DOCTYPE html>
+<!-- lang = LINGUAGEM DO SEU DOCUMENTO -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta = CONFIGURADO UMA PÁGINA PARA SER VISTA, TANTO EM DISPOSITIVO MÓVEL, QUANTO DESKTOP-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title = TÍTULO DA ABA DO NAVEGADOR -->
+    <title>Document</title>
+</head>
+<!-- body = TEXTO DA PÁGINA -->
+<body>
+    XCVZXCVXCVXCVCXVX
+</body>
+</html>
+
+<!--
+    SEMÂNTICA:
+    -- CABEÇALHOS E PARÁGRAFOS --
+    h1 - principal por página -usado 1 vez por página - títulos
+    h2 - sub-titulo
+-->
+ 
+<h1> TAMANHO H1</h1>
+<p>
+    Lorem <em>ipsum dolor</em> sit, <strong>amet</strong>  consectetur adipisicing elit. Veritatis facere obcaecati esse? Architecto veritatis repellendus</p> soluta odio sapiente quo voluptatibus atque eos aspernatur at. Odio tempora harum quasi quo veniam!
+ 
+ <h2> TAMANHO H2 </h2>
+ Lorem <em>ipsum dolor</em> sit, <strong>amet</strong>  consectetur adipisicing elit. Veritatis facere obcaecati esse? Architecto veritatis repellendus soluta odio sapiente quo voluptatibus atque eos aspernatur at. Odio tempora harum quasi quo veniam!
+ 
+ <h3> TAMANHO H3</h3>
+ Lorem <em>ipsum dolor</em> sit, <strong>amet</strong>  consectetur adipisicing elit. Veritatis facere obcaecati esse? Architecto veritatis repellendus soluta odio sapiente quo voluptatibus atque eos aspernatur at. Odio tempora harum quasi quo veniam!
+ 
+ <H4> TAMANHO H4</H4>
+ Lorem <em>ipsum dolor</em> sit, <strong>amet</strong>  consectetur adipisicing elit. Veritatis facere obcaecati esse? Architecto veritatis repellendus soluta odio sapiente quo voluptatibus atque eos aspernatur at. Odio tempora harum quasi quo veniam!
+
+ <!--
+     LISTAS: ORDENADAS E NÃO ORDENADAS.
+     <ol> - lista ordenada.
+     <ul> - lista não ordenada.   
+ -->
+<h1> suco detox</h1>
+ <h2> Ingredientes </h2>
+ <ol>
+    <li>3 folhas de couve;</li>
+    <li>1 laranja;</li>
+    <li>1 pedaço de gengibre</li>
+    <li>300 ml de água;</li>
+    <li>adoçante a gosto;</li>
+    <li>gelo a gosto.</li>
+   
+ </ol>
+ <ul>
+    <li>3 folhas de couve;</li>
+    <li>1 laranja;</li>
+    <li>1 pedaço de gengibre</li>
+    <li>300 ml de água;</li>
+    <li>adoçante a gosto;</li>
+    <li>gelo a gosto.</li>
+   
+ </ul>
+
+ <!-- 
+     CITAÇÕES:
+
+     <blockquote> AVISA O AUTOR DO TEXTO QUE FOI PEGO
+                  DE FORA - CITA.
+
+     <cite> DE QUAL URL FOI PUXADA A CITAÇÃO.
+         
+     <q> usado para citações curtas.
+    <code> muda a cor.
+-->
+
+<blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+   <p>O <strong>Elemento HTML<code>&lt;blockquote&gt;</code></strong>(ou <em> HTML Block <code>Quotation Element</code></em>) indica que um texto externo foi citado.</p>
+</blockquote>
+
+<p>De acordo com <a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"> <cite> página MDN blockquote</cite></a>:</p>
+
+<p>O elemento quote - <code>&lt;q&gt;</code> - é <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"> usado para citações curtas que não precisam de parágrafos ou quebras de linha.</q> --<a href= "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q"> <cite> MDN q page</cite></a>.</p>
+
+<code>&lt;blockquote&gt</code>;
+
+    <!--
+            ABREVIAÇÕES
+            <abbr>
+    -->
+
+    <p>
+
+        Usamos <abbr title="Hypertext Markup Language">HTML</abbr> para estruturar nossos documentos da web.</p>
+
+
+    <!--
+            TAG DE DETALHE DE CONTATO:
+            <adress>
+                <p> - parágrafo
+                <br> - quebra de linha
+                <strong> -         
+    -->
+
+<address>
+    <p> Mayk Brito <br>
+    <strong>Campo Grande, MS</strong>   
+    </p>
+</address>
+
+<!--------------------------------------------------
+    listas de descrição: Marca um conjunto de itens e suas descrições.
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>
+-->
+
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação do texto</dd>
+
+    <dt> Lauguage</dt>
+    <dd>Linguagem com sua semântica </dd>
+</dl>
+
+<!--
+-------------------------------------------------------     Representando códigos de computador
+    <code>
+        Partes genéricas de código
+    <prev>
+        Blocos de código, pois essa tag mantém os espaços em brancos e recuos que eu colocar nbo meu código
+-->
+<pre>
+    <code>
+        Document.
+            querySelector("body")
+    </code>
+</pre>
+
+<!--
+    Elementos genéricos
+
+    * <div> - bloco
+    * <span> - linha
+-->
+
+<div> class="cart">
+    <span> Camiseta</span>
+    <span> R$99,99</span>
+</div>
+
+<!--
+------------------------------------------------------    
+    Hyperlinks - Elemento Âncora: <a>
+
+    + Anatomia do link(elemente <a>)
+    
+    + Atributos:
+        - globais
+        - href
+            - para onde iremos, quando clicarmos no link?
+                - url completa
+                - fragmento
+                - email
+                - telefone 
+                - e outros.
+        - download
+        - target
+            - _self(padrão) - atualiza a aba do link
+            - _blank - abre uma nova aba com o link
+-->
+
+<!--ANATOMIA DO LINK TAG <a>: ul = lista não ordenada -->
+
+<!--    - _self(padrão) - atualiza a aba do link :-->    
+<a href="www.google.com.br">Google</a>
+
+<!-- - _blank - abre uma nova aba com o link: -->
+<a href="www.google.com.br" target="_blank">google</a>
+
+<p>Encontre-me:</p>
+
+<!-- ul = lista não ordenada -->
+
+<ul>
+    <li><a href="https://www.rocketseat.com.br" target="_blank">Google</a></li>
+    <li><a href="mailto:jwilber1972@gmail.com">Email</a></li>
+    <li><a href="tel:+5585985994714">Telefone</a></li>
+</ul>
+
+
+<!-- FRAGMENTO: -->
+
+<P> Saiba Mais: </P>
+<ul>
+    <li><a href="#about">Sobre mim </a></li>
+    <li><a href="#history">História</a></li>
+    <li><a href="#works">Trabalhos </a></li>
+</ul>
+
+<h1 id="about">Sobre mim</h1>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptas soluta dolorum fuga eos laboriosam veniam, nam exercitationem ipsam beatae sapiente eaque odio maiores aut quod? Delectus libero modi assumenda.
+
+<h2 id="history">História</h2>
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae laboriosam alias, aliquid amet sunt eum! Nostrum sed quaerat debitis architecto, aspernatur ad quas itaque nesciunt pariatur fuga voluptates nisi. Perspiciatis?
+
+<h2 id="works">Trabalho</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos sequi nulla voluptatibus debitis ipsum minus culpa cumque dicta, dolores itaque blanditiis hic sapiente odio quaerat velit obcaecati cum beatae?
+
+<!-- CONTEÚDO DOS HYPERLINKS:
+    - Qualquer conteúdo.
+-->
+
+<a href="http://tributario.aspec.com.br\ce.groairas" title="Ir para google">
+    <h1>tributario</h1>
+    <p>tributario groairas</p>
+    <img src="https://source.unsplash.com/" alt="">
+</a>
+<!--
+ COMO NAVEGAR ENTRE LINKS - URLs E CAMINHOS DOS ARQUIVOS:
+    - Uniform e Resource Locator
+        - https://www.rocketseat.com.br
+        - sequência de texto que define onde algo está localizado na web
+    - URL usam caminhos para encontrar arquivos
+    
+    - Caminhos, no explorador de arquivos, um recurso está localizado.
+-->
+
+<!-- ABRIR UM ARQUIVO -->
+<a href="LOGO.jpeg" >abrir logo</a>
+
+<!-- COMO NAVEGAR PELOS CAMINHOS:
+
+    - mesmo diretório;
+    - entrando em diretórios;
+    - saindo de diretórios;
+    - diretório raiz (root ou pai). 
+-->
+<!-- MESMO DIRETÓRIO: -->
+<p><a href="hyperlinks.html">arquivo na mesma pasta</a></p>
+
+<!-- ENTRAR EM ARQUIVOS DE OUTRO DIRETÓRIO: -->
+<a href="wilber2021/conteudo-a-element.html">arquivo na pasta outros</a>
+<br>
+
+<!-- SAINDO DE UM DIRETÓRIO E PEGANDO ARQUIVO DE OUTRO: -->
+<a href="../cartão de crédito/06-bonus-git-github.pdf">arquivo na pasta cartão de crédito, que está na pasta anterior</a>
+<br>
+<!-- DIRETÓRIO RAIZ: -->
+<a href="./hyperlinks.html">arquivo no diretório raiz</a>
+<br>
+
+<!--
+    URL´s ABSOLUTOS VERSUS RELATIVOS
+    - ABSOLUTOS:
+        - inclui protocolo e nome de domínio:
+            - http://www.rocketseat.com.br/projeto/index.html
+        - sempre apontará para o mesmo local, pois é absoluto.
+    
+    - RELATIVOS:
+        - relativo à página aberta no momento;
+        - apontará para lugares diferentes 
+-->
+<a href="google.com"> relativo: ir para o google</a>
+<br>
+<a href="http://google.com"> absoluto: ir para o google</a>
+
+
+<!--
+                TABELAS:
+
+    <table>
+        Prós:
+            - Visualização de dados via linhas e colunas.
+            - Boa acessibilidade para leitura dos dados.
+
+        Contras:
+            - Pouco flexível
+            - Precisa de estilização para melhor visualização
+
+        Não usar:
+            - Para criar seu layout
+-->
+
+

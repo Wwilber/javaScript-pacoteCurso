@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<!--
+    CONFIGURAÇÃO DO HTML:
+
+    # Adicionando CSS(ESTILO) no HTML:
+    
+    ## inline
+    * atributo 'style'
+
+    ## <link>
+    * arquivo CSS externo
+
+    ## @import
+    * arquivo CSS externo
+-->
+<!--
+    # A CASCATA (cascading)
+
+    A escolha do browser de qual regra aplicar, caso haja muitas regras para o mesmo elemento.
+
+    * Seu estilo é lido de cima para baixo.
+
+    É levado em consideração 3 fatores:
+    1. Origem do estilo
+    2. Especificidade
+    3. Importância
+
+    ### origem do estilo
+        inline > tag style > tag link
+    
+    ### Especificidade
+        É um cálculo matemático, onde, cada tipo de seletor e origem do estilo, possuem valores a serem considerados.
+
+        0. Universal selector, combinators e negation pseudo-class (:not()):
+            - UNIVERSAL SELECTOR "*" - tem valor de 0:
+                * {
+                    color: green;
+                }
+        1. Element type selector e pseudo-elements (::before, ::after):
+            - ELEMENTO TYPE SELECTOR "h1" - tem valor de 1:    
+                h1 {
+                    color: red;
+                }
+
+        10. Classes e attribute selectors ([type="radio"])
+            - CLASSES: "class" - tem valor de 10:
+                <h1 class="title"> Titulo </h1>
+                
+                .title {
+                    color: blue;
+                }    
+
+        100. ID selector:
+            - ID SELECTOR:
+                <h1 class = "title" id="my-title">Titulo</h1>
+                #my-title {
+                    color: gray;
+                }
+
+        1000. Inline:
+            - INLINE:
+                <h1 class = "title" id="my-title" STYLE="color:orange;">Titulo</h1>
+
+        JUNTANDO ESPECIFICIDADES:
+            junção de h1+classe+ID: 1 + 10 + 100 = 111:
+                h1.title#my-title {
+                    color: blue;
+                }
+
+    ###  A regra !important:
+    * cuidado, evite o uso;
+    * não é considerado uma boa prática;
+    * quebra o fluxo natureal da cascata.
+    
+        VAI SOBRESCREVER TODAS AS REGRAS DE ESPECIFICIDADES CRIADAS PARA h1:        
+         h1 {
+             color: blue !important;
+         }   
+
+    # At-rules:
+    * ESTÁ RELACIONADO AO COMPORTAMENTO DO CSS
+    * COMEÇA COM O SINAL DE "@" SEGUIDO DO IDENTIFICADOR E VALOR
+
+    ## EXEMPLOS COMUNS:
+
+    - @IMPORT:       /* INCLUIR UM CSS EXTERNO */
+    exemplo: @import "http://local.com/style.css";
+
+    - @MEDIA:        /* REGRAS CONDICIONADAS PARA DISPOSITIVOS */
+    exemplo: @media (min-width: 500px) {
+        /* reles here */
+    }
+    - @FONT-FACE:    /* FONTES EXTERNAS */
+    exemplo: @font-face {
+        /* rules here */
+    }    
+    - @KEYFRAMES     /* ANIMATION */ 
+    exemplo: @keyframes nameofanimation {
+        /* reles here */
+    }
+-->
+
+<!--
+   # SHORTHAND = junção de propriedades. 
+        * junção de propriedades 
+        * resumido
+        * legível
+     
+     ``` CSS   
+    {
+        /* background propreerties */
+            background-color: #000;
+            background-image: url(images/bg.gif);
+            background-repeat: no-repeat;
+            background-position: left top;
+
+        /* background shrthand */
+            background: #000 url(images/bg.gif) no-repeat left top;
+
+
+        /* font properties */
+        font-style: italic;
+        font-weight: bold;
+        font-size: .8em;
+        line-height: 1.2;
+        font-family: arial, sans-serif;
+
+        /* font shorthand */
+        font: italic bold .8em/1.2 Aial, sans-serif;
+
+        TEM ALGUMAS CONDIÇÕES:
+        * não irá considerar propriedades anteriores;
+        * valores não especificados irão assumir o valor padrão;
+        * geralmente, a ordem descrita não importa, mas, se houver muitas propriedades com valores semelhantes, poderemos encontrar problemas.
+
+        PROPRIEDADES QUE ACEITAM SHORTHAND:
+        animation, background, border, border-bottom, border-color, border-left, border-radius, border-style, border-top, border-width, border-column-rule, columns, flex, flex-flow, font, grid, grid-area, grid-column, grid-row, gried-template, list-style, margin, offset, outline, overflow, padding, place-content, place-items, place-self, text-decoration
+
+        **https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties**
+    }
+-->
+<!--
+    # FUNÇÕES:
+
+    * nome seguido de abre e fecha parentesis
+    * recebe argumentos
+
+    ## EXEMPLOS:
+    ''' CSS
+    @import url("http://urlaqui.com/style.css");
+
+    {
+        color: rgb(255, 0, 100);
+        widht: calc(100% - 10 px);
+    }
+-->
+
+<!--
+    FERRAMENTA DEVTOOLS - F12
+-->
+
+<!--
+    VENDOR PREFIXES:
+
+    # Vendor Prefixes
+    Permite que browsers adicione 'features'
+    a fim de colocar em uso alguma novidade que vemos no CSS
+
+    # Exemplo
+
+    ''' CSS
+    p {
+        - webkit-background-clip: text; /* chrome, safari, iOS e Android */
+        - moz-background-clip: text;    /* MOzilla (Firefox) */
+        - ms-background-clip: text;     /* Internet Explore */
+        - o-background-clip: text;      /* Opera */
+
+    # Consultas
+    [ http://ireade.github.io/which-vendor-prefix/ ]
+    [ http://caniuse.com]
+    }
+
+
+
+-->

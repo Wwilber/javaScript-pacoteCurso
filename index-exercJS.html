@@ -1,0 +1,69 @@
+<script>
+
+// 1. DECLARE UMA VARIÁVEL DE NOME weight:
+    let weight;
+
+// 2. QUE TIPO DE DADO É A VARIÁVEL ACIMA: undefined
+    console.log(typeof weight);
+
+// 3. DECLARA UMA VARIÁVEL E ATRIBUA VALORES PARA CADA UM DOS DADOS:
+  // * name: String;
+  // * age: Number (integer);
+  // * stars: Number (float);
+  // * isSubscribed: Boolean. 
+
+    let name, age, stars, isSubscribed;
+    name = "Wilber";
+    age = 48;
+    stars = 10.5;
+    isSubscribed = true;
+
+  // 4. A VARIÁVEL STUDENT É DE QUE TIPO DE DADOS: object
+  // 4.1. ATRIBUA A ELA AS MESMAS PROPRIEDADES E VALORES DO EXERCÍCIO 3:
+    let student = {
+        name2: 'Wilber',
+        age2: 48,
+        stars: 10.5,
+        isSubscribed: true
+    };
+    console.log(name + ' de idade ' + age + ' pesa ' + stars + ' kg');
+
+    console.log(`${student.name2} de idade ${student.age2} e pesa ${student.stars} kg`);
+
+// 5. DECLARE UMA VARIÁVEL DO TIPO ARRAY, DE NOME students E ATRIBUA A ELA NENHUM VALOR, OU SEJA, SOMENTE O ARRAY VAZIO:
+    let students = [];
+    
+// 6. RETRIBUA VALOR PARA A VARIÁVEL ACIMA, COLOCANDO DENTRO DELA O OBJETO STUDENT DA QUESTÃO 4(NÃO COPIAR E COLAR O    OBJETO, MAS USAR O OBJETO CRIADO E INSERIR ELE NO ARRAY).
+    // let students = [
+    //    student
+    // ];
+
+// 7. COLOQUE NO CONSOLE O VALOR DA POSIÇÃO ZERO DO ARRAY ACIMA:
+    console.log(students[0]);
+
+// 8. CRIE UM NOVO student E COLOQUE NA POSIÇÃO 1 DO ARRAY students:
+let john = {
+        name3: 'John',
+        age3: 33,
+        stars3: 20.5,
+        isSubscribed3: false
+    };
+
+students = [
+    student,
+    john
+];
+
+console.log(students);
+
+// 9. Sem rodar o código responda qual é a resposta do código abaixo e por que? Após sua resposta, rode o código e veja se você acertou.
+console.log(a);
+var a = 1;
+
+
+
+
+
+</script>
+
+
